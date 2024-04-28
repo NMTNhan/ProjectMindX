@@ -1,0 +1,30 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head", {title: "Home page"}) %>
+</head>
+<body>
+    <%- include('partials/header.ejs') %>
+    <main>
+                <!-- Home page color -->
+        <div id="gradient" class="fixed -z-10 top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-red-300 via-transparent to-transparent opacity-30"></div>
+
+                <!-- Hero section -->
+        <%- include('partials/hero_section.ejs') %>
+
+            <!-- Just released products -->
+        <%- include('partials/just_released_product.ejs') %>
+
+            <!-- Brand gallery -->
+        <%- include('partials/product_brand.ejs') %>
+      
+    </main>
+    <%- include("partials/footer.ejs"); %>
+    <Script>
+        $('#navigation-bar').css('border-bottom-style', 'none')
+    </Script>
+</body>
+</html>

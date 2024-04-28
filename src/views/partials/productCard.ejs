@@ -1,0 +1,34 @@
+
+
+<div class="flex flex-col m-1 rounded-lg shadow-lg cursor-pointer overflow-hidden [&:hover_img]:scale-105"
+    onclick="location.href='/users/customer/<%= product._id %>'">
+
+                <!-- IMG of products -->
+    <div class="flex overflow-hidden aspect-square">
+        <img class='shadow-sm w-h-full object-scale-down transition-300' src="<%= product.imageCoverData %>" alt="hero-image-2">
+    </div>
+
+                <!-- Div for info of products -->
+    <div class="flex flex-col p-2 bg-white">
+
+                <!-- Product's name -->
+        <div class="">
+            <h2 class='font-mono font-extrabold text-lg text-left ellipsis-2'>
+                <%- locals.product ? product.name : "Sample product" %>
+            </h2>
+        </div>
+
+                <!-- Product's description -->
+        <div class="">
+            <p class="font-normal text-sm">
+                <%- locals.product ? product.brand : "Sample brand" %>
+            </p>
+        </div>
+                <!-- Product's price -->
+        <div class="relative center-y"> 
+            <p class="font-semibold text-2xl">
+                $<%- locals.product ? product.price : "00.00" %>
+            </p>
+        </div>
+    </div>
+</div>

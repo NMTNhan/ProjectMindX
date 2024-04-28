@@ -1,0 +1,14 @@
+
+
+
+<header>
+    <!-- Navigation Bar -->
+    <%- include("nav_bar.ejs"); %>
+    <!-- Check if the user is a customer -->
+    <% if (user) { %>
+        <% if (userType === "Customer") { %>
+            <!-- If true then include category bar -->
+            <%- include("category_bar.ejs"); %>
+        <% } %>
+    <% } %>
+</header>
