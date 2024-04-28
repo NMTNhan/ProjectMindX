@@ -1,23 +1,11 @@
-COSC2430-Full-stack-Web-Application
-
-GitHub Repository: https://github.com/NMTNhan/WebProgramming.git
-
-Video demonstration URL: https://www.youtube.com/watch?v=j7P_vAE2id8
-
 Existing accounts to test:
 
-    Customer: username: Thai1234
-              password: Tha!1234
+    Customer: username: TestCustomer
+              password: Testcus123!
 
               
-    Vendor:   username: Thai12345!
-              password: Tha!1234
-
-
-    Shipper:  
-            username: Khiem1234
-            password: Kh!iem1234
-              
+    Vendor:   username: TestVendor
+              password: Test123!
 
 Website starting procedures:
 
@@ -25,5 +13,5 @@ Website starting procedures:
 2. Run command "npm install"
 3. Run command "npm run devStart"
 4. Open any browser
-5. Enter "localhost:3000" in the URL bar
+5. Enter "localhost:6901" in the URL bar
 6. Start using the website
